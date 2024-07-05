@@ -4,9 +4,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
+
 import java.math.BigDecimal;
 
-
+    @Data
     @Entity
     public class Produto{
         @Id
@@ -19,9 +21,6 @@ import java.math.BigDecimal;
         private BigDecimal preco;
         private Integer quantidadeEmEstoque;
 
-        public void setId(Long id) {
-            this.id = id;
-        }
 
         // Getters e Setters
     }
