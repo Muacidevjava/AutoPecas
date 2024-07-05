@@ -19,6 +19,10 @@ import java.math.BigDecimal;
         private BigDecimal preco;
         private Integer quantidadeEmEstoque;
 
+        public void setId(Long id) {
+            this.id = id;
+        }
+
         // Getters e Setters
     }
 
